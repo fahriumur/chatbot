@@ -1,0 +1,267 @@
+/* Tüm HTML ve body için yüksekliği %100 yapar */
+html, body {
+    height: 100%;
+}
+
+/* Body için font, arka plan ve geçiş efekti ayarları */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(90deg, rgba(1,1,88,0.82), rgb(1,1,29));
+    transition: 1s all ease-in-out;
+}
+
+/* Başlatma butonunun stilleri */
+#init {
+    margin-top: 2rem; /* Üstten boşluk */
+    background: indianred; /* Arka plan rengi */
+    border: none; /* Kenarlık yok */
+    padding: 20px 20px; /* İç boşluk */
+    border-radius: 20px; /* Kenarların yuvarlatılması */
+    font-size: 12px; /* Yazı boyutu */
+    font-weight: 500; /* Yazı kalınlığı */
+    color: aliceblue; /* Yazı rengi */
+    cursor: pointer; /* İmleç tipi */
+}
+
+/* Açıklama paragrafı için renk ve font ağırlığı */
+.desc p {
+    color: rgb(133, 153, 168);
+    margin: 0; /* Dış boşluk yok */
+    font-weight: 600; /* Yazı kalınlığı */
+}
+
+/* Başlık metni için stil ayarları */
+.text {
+    font-size: 65px; /* Yazı boyutu */
+    font-weight: 800; /* Yazı kalınlığı */
+    color: cadetblue; /* Yazı rengi */
+    margin: 70; /* Dış boşluk */
+}
+
+/* Ana kapsayıcı için stil ayarları */
+.parent {
+    position: relative; /* Konumlandırma */
+    height: 50%; /* Yükseklik */
+    padding: 0 18rem; /* Yanlardan boşluk */
+    display: flex; /* Flexbox düzeni */
+    justify-content: space-between; /* Elemanlar arası boşluk */
+    align-items: center; /* Elemanları ortalama */
+}
+
+/* Bot görüntüsü için stil ayarları */
+.bot-img {
+    width: 20rem; /* Genişlik */
+    height: 20rem; /* Yükseklik */
+}
+
+/* Çocuk kapsayıcı için stil ayarları */
+.child {
+    box-shadow: 0 0 0px salmon; /* Gölge efekti */
+    border-radius: 50px; /* Kenarların yuvarlatılması */
+    height: 30rem; /* Yükseklik */
+    width: 21rem; /* Genişlik */
+    margin: auto; /* Otomatik dış boşluk */
+    background: white; /* Arka plan rengi */
+}
+
+/* Header içindeki resim için stil ayarları */
+.header img {
+    width: 35px; /* Genişlik */
+    height: 35px; /* Yükseklik */
+    border-radius: 50%; /* Yuvarlak köşeler */
+    margin: 0 0.5rem; /* Yanlardan boşluk */
+    border: 1px solid rgb(231, 231, 231); /* Kenarlık */
+    padding: 5px; /* İç boşluk */
+}
+
+/* Header için stil ayarları */
+.header {
+    position: absolute; /* Konumlandırma */
+    top: 0; /* Üstten sıfır */
+    display: flex; /* Flexbox düzeni */
+    align-items: center; /* Elemanları ortalama */
+    border-bottom: 1px solid whitesmoke; /* Alt kenarlık */
+    background: white; /* Arka plan rengi */
+    width: 21rem; /* Genişlik */
+    padding: 5px 0; /* Üst ve alt iç boşluk */
+    border-top-right-radius: 15px; /* Sağ üst köşe yuvarlatma */
+    border-top-left-radius: 15px; /* Sol üst köşe yuvarlatma */
+    z-index: 1; /* Z sırası */
+    box-shadow: 0 0 2px rgb(175, 175, 175); /* Gölge efekti */
+}
+
+/* Header içindeki çocuk elemanlar için stil ayarları */
+.h-child {
+    display: flex; /* Flexbox düzeni */
+    align-items: center; /* Elemanları ortalama */
+}
+
+/* Header içindeki span için stil ayarları */
+.header span {
+    font-size: 13px; /* Yazı boyutu */
+    margin: 0; /* Dış boşluk yok */
+    padding: 0; /* İç boşluk yok */
+}
+
+/* Yenileme butonu için stil ayarları */
+.refBtn {
+    background: none; /* Arka plan yok */
+    border: none; /* Kenarlık yok */
+    border-radius: 50%; /* Yuvarlak köşeler */
+    color: indianred; /* Yazı rengi */
+    font-size: 18px; /* Yazı boyutu */
+    cursor: pointer; /* İmleç tipi */
+    margin-left: 270px;
+}
+
+/* İsim için font kalınlığı */
+.name {
+    font-weight: 600; /* Yazı kalınlığı */
+}
+
+/* Footer için stil ayarları */
+.footer {
+    position: absolute; /* Konumlandırma */
+    bottom: 0; /* Alttan sıfır */
+    width: 19.5rem; /* Genişlik */
+    background: white; /* Arka plan rengi */
+    border-bottom-left-radius: 10px; /* Sol alt köşe yuvarlatma */
+    border-bottom-right-radius: 10px; /* Sağ alt köşe yuvarlatma */
+    color: indianred; /* Yazı rengi */
+    padding: 15px; /* İç boşluk */
+    text-align: center; /* Metin ortalama */
+    font-size: 15px; /* Yazı boyutu */
+    box-shadow: 0 0 0px rgb(56, 119, 238); /* Gölge efekti */
+    display: flex; /* Flexbox düzeni */
+    justify-content: space-between; /* Elemanlar arası boşluk */
+    align-items: center; /* Elemanları ortalama */
+}
+
+/* Chat kutusu için stil ayarları */
+#chat-box {
+    position: relative; /* Konumlandırma */
+    top: 60px; /* Üstten boşluk */
+    padding: 8px 15px; /* İç boşluk */
+    font-size: 12px; /* Yazı boyutu */
+    height: 24.2rem; /* Yükseklik */
+    overflow: auto; /* Taşma durumu */
+    background: rgb(224, 241, 253); /* Arka plan rengi */
+    text-align: center; /* Metin ortalama */
+}
+
+/* Javascript dosyasında kullanılacak mesaj için stil ayarları */
+.msg {
+    background: white; /* Arka plan rengi */
+    padding: 5px 15px; /* İç boşluk */
+    border-top-right-radius: 15px; /* Sağ üst köşe yuvarlatma */
+    border-bottom-left-radius: 15px; /* Sol alt köşe yuvarlatma */
+    border-bottom-right-radius: 15px; /* Sağ alt köşe yuvarlatma */
+    width: max-content; /* Maksimum içerik genişliği */
+    font-size: 14px; /* Yazı boyutu */
+    color: rgb(0, 0, 0); /* Yazı rengi */
+    box-shadow: 0 0 5px rgb(64, 61, 233); /* Gölge efekti */
+    max-width: 65%; /* Maksimum genişlik */
+    text-align: left; /* Metin sola hizalama */
+}
+
+/* Test sınıfı için stil ayarları */
+.test {
+    text-align: right; /* Metin sağa hizalama */
+    margin: 20px 0; /* Üst ve alt dış boşluk */
+}
+
+/* Cevap için stil ayarları */
+.rep {
+    background: rgb(253, 243, 224); /* Arka plan rengi */
+    color: lightslategray; /* Yazı rengi */
+    padding: 5px 15px; /* İç boşluk */
+    border-top-right-radius: 15px; /* Sağ üst köşe yuvarlatma */
+    border-bottom-left-radius: 15px; /* Sol alt köşe yuvarlatma */
+    border-top-left-radius: 15px; /* Sol üst köşe yuvarlatma */
+    font-size: 14px; /* Yazı boyutu */
+    box-shadow: 0 0 5px rgb(211, 211, 211); /* Gölge efekti */
+}
+
+/* Seçenekler için stil ayarları */
+.opt {
+    padding: 5px 20px; /* İç boşluk */
+    columns: lightsalmon; /* Sütun rengi */
+    border: 1px solid blueviolet; /* Kenarlık */
+    border-radius: 1rem; /* Kenarların yuvarlatılması */
+    margin: 0.3rem 0.5rem; /* Dış boşluk */
+    display: inline-block; /* Satır içi blok eleman */
+    cursor: pointer; /* İmleç tipi */
+    font-weight: 500; /* Yazı kalınlığı */
+    background: white; /* Arka plan rengi */
+    text-align: center; /* Metin ortalama */
+    font-size: 14px; /* Yazı boyutu */
+    color: blueviolet; /* Yazı rengi */
+}
+
+/* Bağlantılar için stil ayarları */
+.link {
+    text-decoration: none; /* Alt çizgi yok */
+    display: block; /* Blok eleman */
+    text-align: center; /* Metin ortalama */
+    color: aliceblue !important; /* Yazı rengi */
+    background: blueviolet; /* Arka plan rengi */
+}
+
+/* Bağlantılar için stil ayarları */
+.m-link {
+    text-decoration: none; /* Alt çizgi yok */
+}
+
+/* Bağlantıya tıklandığında stil değişikliği */
+.link:active {
+    background: white; /* Arka plan rengi */
+    border: 1px solid blueviolet; /* Kenarlık */
+    color: blueviolet; /* Yazı rengi */
+}
+
+/* Yazı yazma alanı ve gönder butonu kapsayıcısı */
+.message-container {
+    display: flex; /* Flexbox düzeni */
+    align-items: center; /* Elemanları ortalama */
+    background-color: #fff; /* Arka plan rengi */
+    border-radius: 5px; /* Kenarların yuvarlatılması */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Gölge efekti */
+    padding: 10px; /* İç boşluk */
+    position: absolute; /* Konumlandırma */
+    bottom: 10px; /* Alttan boşluk */
+    width: 1000px; /* Genişlik */
+    left: 0; /* Soldan sıfır */
+}
+
+/* Yazı yazma alanı (input) */
+.message-input {
+    border: 1px solid #ccc; /* Kenarlık */
+    border-radius: 15px; /* Kenarların yuvarlatılması */
+    padding: 100px; /* İç boşluk */
+    font-size: 16px; /* Yazı boyutu */
+    flex: 1; /* Esnek genişlik */
+    margin-right: 10px; /* Sağdan boşluk */
+    margin-left: 25px;
+}
+
+/* Gönder butonu */
+.send-button {
+    background-color: #4CAF50; /* Arka plan rengi */
+    border: none; /* Kenarlık yok */
+    border-radius: 100px; /* Yuvarlak köşeler */
+    padding: 10px; /* İç boşluk */
+    cursor: pointer; /* İmleç tipi */
+    display: flex; /* Flexbox düzeni */
+    justify-content: center; /* Elemanları ortalama */
+    align-items: center; /* Elemanları ortalama */
+}
+
+/* Gönder butonu içindeki SVG için stil ayarları */
+.send-button svg {
+    fill: #fff; /* Dolgu rengi */
+}
+
+/* Gönder butonu üzerine gelindiğinde stil değişikliği */
+.send-button:hover {
+    background-color: #45a049; /* Arka plan rengi */
+}
